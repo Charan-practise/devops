@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: service
+metadata: 
+  name: service
+spec: 
+  type: NodePort
+  selector:
+    sunny: charan
+  spec:
+  - port: 80
+    targetport: 8080
+    NodePort: 30001
+  
+    
