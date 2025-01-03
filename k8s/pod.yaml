@@ -1,0 +1,10 @@
+apiversion: v1
+kind: pod
+metadata: 
+  name: charan
+spec:
+  containers:
+  - name: charan
+   image: nginx
+   containerport:
+   -port: 80 
