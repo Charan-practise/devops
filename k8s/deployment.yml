@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: deployment
+metadata: 
+  name: charan
+spec:
+  replicas: 1
+  selector: 
+    matchlabls:
+      sunny: charan
+  template:
+    metadata:
+      lable: 
+        sunny: charan
+     spec:
+      container:
+      - name: madhu
+        image: nginx
+        port:
+        - containerport: 80
